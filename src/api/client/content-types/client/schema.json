@@ -4,15 +4,60 @@
   "info": {
     "singularName": "client",
     "pluralName": "clients",
-    "displayName": "Client"
+    "displayName": "Client",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
+    "cedula_identidad": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "nombres_apellidos": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "text",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "id_tipo_cliente": {
+      "type": "integer",
+      "required": true
+    },
+    "id_tipo_documento": {
+      "type": "integer",
+      "required": true
+    },
+    "img_cedula_identidad": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "img_tarjeta_propiedad": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
