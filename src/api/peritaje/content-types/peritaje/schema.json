@@ -30,11 +30,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::client.client"
-    },
-    "id_categoria": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::calif-parte-cat.calif-parte-cat"
     }
   }
 }
